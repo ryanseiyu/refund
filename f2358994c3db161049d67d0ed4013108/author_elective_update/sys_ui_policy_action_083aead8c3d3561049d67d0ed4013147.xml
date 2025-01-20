@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>rejection_reason</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 21:05:15</sys_created_on>
+        <sys_id>083aead8c3d3561049d67d0ed4013147</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>rejection_reason</sys_name>
+        <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_update_name>sys_ui_policy_action_083aead8c3d3561049d67d0ed4013147</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 21:05:15</sys_updated_on>
+        <table>x_1105246_refund_refund</table>
+        <ui_policy display_value="Send message when Rejection Reason is empty">0df966d8c3d3561049d67d0ed40131f0</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=083aead8c3d3561049d67d0ed4013147"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</application>
+        <file_path/>
+        <instance_id>00e1f12c1b7e7950c84543f4bd4bcb85</instance_id>
+        <instance_name>dev225101</instance_name>
+        <name>sys_ui_policy_action_083aead8c3d3561049d67d0ed4013147</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>rejection_reason</field><field_message/><field_message_type>none</field_message_type><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-20 21:05:15</sys_created_on><sys_id>083aead8c3d3561049d67d0ed4013147</sys_id><sys_mod_count>0</sys_mod_count><sys_name>rejection_reason</sys_name><sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package><sys_policy/><sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope><sys_update_name>sys_ui_policy_action_083aead8c3d3561049d67d0ed4013147</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-20 21:05:15</sys_updated_on><table>x_1105246_refund_refund</table><ui_policy display_value="Send message when Rejection Reason is empty">0df966d8c3d3561049d67d0ed40131f0</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=083aead8c3d3561049d67d0ed4013147"/></record_update>]]></payload>
+        <payload_hash>-1521085411</payload_hash>
+        <record_name>rejection_reason</record_name>
+        <reverted_from/>
+        <source>6286c118c3db161049d67d0ed40131dd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 21:05:15</sys_created_on>
+        <sys_id>e44a2ad8c3d3561049d67d0ed401319b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1948588af850000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 21:05:15</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>e84a2ad806d35610bf023c9990a1e89a</update_guid>
+        <update_guid_history>e84a2ad806d35610bf023c9990a1e89a:-1521085411</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 21:08:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>0493c781c6a34a278030749b16eba879</sys_id>
+        <sys_metadata>083aead8c3d3561049d67d0ed4013147</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>rejection_reason</sys_name>
+        <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_scope_delete display_value="">272e90aa070841128affcdfbfc5ecb09</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_083aead8c3d3561049d67d0ed4013147</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_083aead8c3d3561049d67d0ed4013147">e44a2ad8c3d3561049d67d0ed401319b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 21:08:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
