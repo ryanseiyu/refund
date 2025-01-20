@@ -1,0 +1,1064 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=4453000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>refund_lifecycle</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Refund Record","reference":"x_1105246_refund_refund","reference_display":"Refund","type":"reference","base_type":"reference","usedInstances":{"79f22ae8-cf9c-40ec-a434-0f8a0ad831f0":["record"],"876b445a-b2b7-4ada-b154-5803fb30d70e":["record"],"e19b06bd-592b-4a64-aea6-29512ee0913b":["record"],"6fb9f23b-5081-4be2-8b67-d1a951e27e2b":["record"]},"attributes":{}},{"name":"{{static.8622f1dcc39f161049d67d0ed40131e7}}","label":"HR Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"876b445a-b2b7-4ada-b154-5803fb30d70e":["approval_conditions"]}},{"name":"876b445a-b2b7-4ada-b154-5803fb30d70e.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"fe2a4dda-0310-4dd1-8c16-e1626f1fe6aa":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>4dea0e90c353561049d67d0ed4013117</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Refund Lifecycle</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>01ea0e90c353561049d67d0ed4013170</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:41:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6f49ca9cc313561049d67d0ed401316c</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Refund Lifecycle</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_update_name>sys_hub_flow_6f49ca9cc313561049d67d0ed401316c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:55:31</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=6f49ca9cc313561049d67d0ed401316c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6f49ca9cc313561049d67d0ed401316c"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1105246_refund_refund">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>01ea0e90c353561049d67d0ed4013170</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 18:48:12</sys_updated_on>
+        <table>x_1105246_refund_refund</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>6f49ca9cc313561049d67d0ed401316c</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 19:55:31</sys_created_on>
+        <sys_id>8f4a5e94c393561049d67d0ed40131d3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:55:31</sys_updated_on>
+        <trigger display_value="">01ea0e90c353561049d67d0ed4013170</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=6f49ca9cc313561049d67d0ed401316c^sys_idNOT IN8f4a5e94c393561049d67d0ed40131d3"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=6f49ca9cc313561049d67d0ed401316c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=6f49ca9cc313561049d67d0ed401316c^sys_idNOT INa7498a10c353561049d67d0ed40131f7"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>6f49ca9cc313561049d67d0ed401316c</id>
+        <name>Refund Lifecycle</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:41:16</sys_created_on>
+        <sys_id>a7498a10c353561049d67d0ed40131f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 18:41:16</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a7498a10c353561049d67d0ed40131f7"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=6f49ca9cc313561049d67d0ed401316c^sys_idNOT IN02da0690c353561049d67d0ed4013197,0eda0690c353561049d67d0ed401319c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Refund Lifecycle">6f49ca9cc313561049d67d0ed401316c</model>
+        <model_id>6f49ca9cc313561049d67d0ed401316c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6f49ca9cc313561049d67d0ed401316c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:47:59</sys_created_on>
+        <sys_id>02da0690c353561049d67d0ed4013197</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 18:47:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=02da0690c353561049d67d0ed4013197"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Refund Lifecycle">6f49ca9cc313561049d67d0ed401316c</model>
+        <model_id>6f49ca9cc313561049d67d0ed401316c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6f49ca9cc313561049d67d0ed401316c</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:00</sys_created_on>
+        <sys_id>0eda0690c353561049d67d0ed401319c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 18:48:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0eda0690c353561049d67d0ed401319c"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=6f49ca9cc313561049d67d0ed401316c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6f49ca9cc313561049d67d0ed401316c"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=6f49ca9cc313561049d67d0ed401316c^sys_idNOT INd2da8a90c353561049d67d0ed401318e"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Refund Lifecycle">6f49ca9cc313561049d67d0ed401316c</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:00</sys_created_on>
+        <sys_id>d2da8a90c353561049d67d0ed401318e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 18:48:06</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACuvgS521re9EA2w3qZNuHIBUoaWgTpSlXopS4i/x7h7rYsi6+Z5O87MIkxTlzeOYMmYfvOicucP1avycuB72jMyEhFITfr5aAw1INO4Is1NyCCJ/IIFzp1zKMoaMHoQ+hfm129ITwGO5W0Y2PH+HS9Iv8cz2fxt/PjmkaPavbd0KgsfDz/3CFz6IlJ6s/84XTYtybM+6HIPTrh8eOviQhbixV0O+VKaYie9QjQwsMzzZtyzIM66prun3bNS3fJmAYuGE14QpS2ZD3Jk14liB8wFCU8AgaKAmB+LeCr9Yr5shoxsmCPEfsP9z9ylDrKCB2D7K59U8nJyIb9uYB8+B2KVkgspEMZzYZ8Hghvmb4FYVAScxlQSGOxBHuB0sFWYHIEdG7efA0LQJ+ZiLNLp/kgUf4+heRMmRuLCFShFPGkXon4yYK4jBFP52Mbqdj569P96PfJlNnOrm7n96M7idj/SXNy/k3VjtmCHMsTpbOy/rcPzPg6gBFvHARTUePvJAt5SdPsgRyOC+djVxHgfBZykpNsl4xFW1LNk+pOEzDaFWtV9q8UO7fkz/qKs0Gj5Nov0+ID6RFoi4tSbScZAM02ZBvObtdYs1HDlFr1zDeSK9ZRZ0s10XgAx9vttNxcjZDATOxjKVi64kIGTkycIjvOyUe1VLEtE+/WW4ve8UaxgI/cNbnUZdsStuavy8sQrgPWHAFN+mWOE+/5FtOY6EFeHD4j+bFIVIjtcLC6M2CzHJG6R1w8GRJBPRbVP71O4siJmYl1OugKQe1mOtwKCatSCmLHZ0Z/PHEeq3zm1R4q9Tt0UVrmpS6QC1joErWNGyXmsbA6BHq24bhWaWirYNpRSkrp/8qxXtc6Uap7vgBKqtSnIM3ysI/SDHJttwKEpQacocYXQaaeSFoloJWcTr7KKtbyzIbHlfuPjtSu3BHJ35C8Av/UMc70OwoD57QZU8wOpd4/8zCILv7bTmP2lNjQtus0H7K+fv5gqZHgxB2A9he8UZ2t2G40CgRqwsYnU1NdwhdMNDfbLQ2tzccuh6xKB30B2CZFaPbwGjE9iEMbo+wkiZltpldo0aSJmkdYXNnAKxZ3tEAzze7XJiNVpfNfQxTe5qDcBBq6HBlWzVvm3HmQzF3cmHXoiSbUj63uOnV0OuZg4E3wGcHFjftgkvMrtUjw0HfvupVirsGZRdM2UDCD3mMRKsoBdJS+N+yqff1kH5NhUYgpWoyx/degbfT9BuSBSn1P3UsWuofQah9DcQvN5t12h1gW0tfpJdqwoegUAervS4MN5Dz2i0AQ/+K41uh1e2xhZW3fBNV9JBsp3X2mwi6V70htZvdhA6b3GQDph3mu780HFgMSWtZNd0eDtV20lgire3+BLVWZFK+B+y4qFyKFPPipFivR4p99uWoqMXWh+ApYD9Qt0qvEOe0LBUTnICWfXocaDihYRCNUS3/qx++692VJueAlHK8BWNATUU/16DLDaMOZa3gHwsku1fXGhcOa/ld6U17UuXUL/uEBX9Aej275ZY7rD5hmwDtwfvuO9TRBZA01dPONnXcvtU9GxtVSZ3bijiwBV006+Y+dF7WjZ1oX9bn95hdD/AGFO+0ezz+D8AI5KetHgAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=6f49ca9cc313561049d67d0ed401316c^sys_idNOT IN12da8a90c353561049d67d0ed4013190,5ada8a90c353561049d67d0ed4013196,9eda8a90c353561049d67d0ed4013191,d6da8a90c353561049d67d0ed4013194"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Refund Lifecycle">6f49ca9cc313561049d67d0ed401316c</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:00</sys_created_on>
+        <sys_id>12da8a90c353561049d67d0ed4013190</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:57:54</sys_updated_on>
+        <ui_id>79f22ae8-cf9c-40ec-a434-0f8a0ad831f0</ui_id>
+        <values>H4sIAAAAAAAA/+VVXWviQBT9K2WeQ0iMSuvboggL3Rbs4ku3hMnMjQ5MPnY+rK743/cmmcSgbddCX2R9kblfc87NOcnznghOJmQIPAjvwjGLwigaBMHgdhgm4ygJBzyiACHxSE4zwEoFrFAczxsqbRXY76cKqAEehz6zSkFuDgfMc6FLSXdLV4YRthaSY55Mnl88UlKFEw0oMtmfpC6FJGkCEksXLaZTjGZXVmdeMJshrli0wXvXOXOZm+8zzGBTBScMPAJbAzkHBJJSqcEjGc05NYXakYlRFgNImj/mctdVrEVuGqIZ3WrxB28eBlVdCsiMuSV0x9gtqAmnM2roE05mxqpuX4VgoJudcEiplWbajzUFj6URRd60GJrItruQNssfmo2QbkDveViNIKCseFbIG1rp07p4XbQg5yKvV+IoyoJR2Z2oMUok1lRw9gQk1DvOaFmKfBWXqtiIuhmhZP5K4sFPZfGKd2qxyn3KKtw+bpX6c4zP6vCSKlGR+IFjsPngEb3TU0m1PlLBHca/bYWkIeYoxPUW6hXEtRKqZqZEab7hVRtwwA+eE30y+khh7O4oqN7Mo/C3cRgGo8FwHCMem3P3dy79RRv/nAEugNca4Gf92N+G6zxwFrvv9948NAnngNGXOeD2mhzgaFy9Bf4l/GDw4au1p6Ra67onem2osfqXDYKIa5tkwuCb/1zy75V9zgEX4GwdMBcguX4DeCt/yBCfgbghcmIBl7xZumT3IfgyH4TjoP5dkRv+m+/By1+aDTX4BgkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Refund Lifecycle">6f49ca9cc313561049d67d0ed401316c</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>e0578544-bea3-49ab-9f33-3f5189d7e27f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:00</sys_created_on>
+        <sys_id>5ada8a90c353561049d67d0ed4013196</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:57:54</sys_updated_on>
+        <ui_id>6fb9f23b-5081-4be2-8b67-d1a951e27e2b</ui_id>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K5WfoyghgFreJhDSpK6V6MRLV0WOfQOeHCezHQpD/PfdJE6IoOuo1Bc0XpDvl8+5OSd53hPByYQMgQfhXThmURhFgyAY3A7DZBwl4YBHFCAkHlE0A6zUwHLN8byhsqwC+/1UA7XA49Bnpdag7OGAeS5MIelu6cowwtZCcsyTyfOLRwqqcaIFTSb7k9SlkCRNQGLposV0itHuiurMc1ZmiCsWbfDedc5c5ubrDDPYVMEJA4/A1oLigEBSKg14JKOKU5vrHZlYXWIASfNHJXddxVoo2xDN6NaI33jzMKjqUkBmzC2hO8ZuQU04nVFLn3Ays6Xu9pULBqbZCYeUltJO+7Gm4LGwIldNi6WJbLtzWWbqodkI6Qb0nkdpEAQUFc8KeUMrfVrnr4sW5FyoeiWOoswZld2JWqtFUtoKzp6AhHrHGS0KoVZxofONqJsRSuavJB78VOaveKcRK+VTVuH2cavUn2N8VoeXVIuKxDccg80Hj5idmUpqzJEK7jD+VVZIGmKOQlxvoV5BXCuhamZaFPYLXrUBB/zgOdEno/cUxu6OgurNPAp/G4dhMBoMxzHiKRV3f+fSX7TxjxngAnitAb7Xj/1tuM4DZ7H7fu/NQ5NwDhh9mgNur8kBjsbVW+Bfwg8G775ae0qqtW56okdISIrKH2UQRCjYn8Dw1X+u+b/WfcwDFyBtPTAXILl5A3prAMgQoIW4oXJiApe8Wbpk9yn4NCeE46D+XZEf/psvwssfGwmzJAgJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Refund Lifecycle">6f49ca9cc313561049d67d0ed401316c</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:00</sys_created_on>
+        <sys_id>9eda8a90c353561049d67d0ed4013191</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:57:54</sys_updated_on>
+        <ui_id>876b445a-b2b7-4ada-b154-5803fb30d70e</ui_id>
+        <values>H4sIAAAAAAAA/+1XXU/bMBT9K8jPVZc0/X5DVEibNpCA8UJR5NoONXKdzHaALup/343tpKEdXbv1hW1PyPfDOfdwjl3fFYhTNEaDYdJho1EnmIVBEAXBsEeCYcRm0aA/iDAJUAtJvGBQqRhJFYX1ExZ5GSiKM8WwYTQO2yRXikmzWkGecp0JvLz1ZRAhcy4o5NH47r6FMqxgR8MUGhcbqX0hCTxjAkqvKkybGM0yK9c0JfkCcMW8Cn72nROfOfk4gQw0lXCCFmIvhknKAEeChWYttMCSYpOqJRoblUMAZqaXUizrijmXxs25wC+af4cPR52yLmEwGPEc1MvY8+PCyQQbfA07E5Ormq6UE6YdJZQlOBfmrBlzBZeZ4al0LQbPRNWdinwhLxwhqN6g8e/INYBgWTlnidyNlVzP0+erCuQ5l5YRP6JICRb1Chuj+Cw3JZwCMcEsxQucZVw+xJlKn7htBiiL9oOARTsR6TN8U/MH2cakxN0GVnH7HOITG77FipdDfIFtoHnVQnqpzwTWej0KcBh/y0skbjA/QmxZcBSUfUTxzJzCV56Yx7xqebnPyE5tkbWU3HZrtb/EYRj0Ot1+DChySf2fbb1fVfHDVL8Hskr1Nx7aBlKvebuMbe615G3byYVLeMWHuxXvI2vJO638RPHD4B0p3o/17iX/K7UH4S5N0eFaQ4AAZsAiTjgTzUO+SmzrvJE5TOl7oKqUfuq/cXLuYb0F12vfLn+mfdu/of3Ogdp/+7gfBsF7kv+/dOCTnWJj0VpTj2mu5A4HxHOurTLedEKj4jBH7AGycsQnh3LTEJvgf8cP0X8//P1+6PZ2Sq3xs6JWNUkl5SVi3XCFO5mZvmKPjBh9Kpdf74pCG2w4aQ/7nU4SUkKiURL2w6A7ov0BDRjtBmEUssFqdb/toiPseJjr9qCifmfkgulfUeM9VyeVb2r6rr7Qqh2997rHenm8M+v9K7/EyE6tJaO1tmgOBMGruvnQniIHe4rGUyRTyaaoNUVlVVyKy4ahAsDVCRsritXKRXKF/QZhY7nupnipbaUmc0ZBmzb6KhJbM/j4Md75e3BS+W+Ss5OJI2WbJu+7GqfjhW/dede+wO704YY3777e0e6+7n/7/an9ACaP6+cFXGxw+h3Rk/c/AEJVAb78EgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Refund Lifecycle">6f49ca9cc313561049d67d0ed401316c</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>fe2a4dda-0310-4dd1-8c16-e1626f1fe6aa</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:00</sys_created_on>
+        <sys_id>d6da8a90c353561049d67d0ed4013194</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:57:54</sys_updated_on>
+        <ui_id>e19b06bd-592b-4a64-aea6-29512ee0913b</ui_id>
+        <values>H4sIAAAAAAAA/+VVTW8aMRD9K8jnFbLZhQZuVVDUSmkikSqXkK6MPQuWvB+1vSQU8d876/USlKCUSLmgckGer33veWb8sCVKkglJQFI2ZiMRszgeUDq4SNhiFC/YQMYcgJGIFDwHjDQgSiPxvOa6bgzb7aUB7kCmrC9qY6Bwux36pbKV5pv7EIYWsVJaop9MHh4jUnGDFR0YMtm+cp0KSfMFaAyddZheY3SbqjnLUtQ54kpVZ7wOmdPg6X2fogeTGjiMRgSeHRQSEEjGtYWI5LyQ3JVmQybO1GhA0vK20Jt9xEoVriWa82er/uCXE9rEZYDMRBBhf0yDQK05m3LH77CycLXZ61UqAbbVRELGa+0uD21twG3lVFm0KY4vdJdd6jovblpFyL7AwX3UFkFA1fBskLe0srtV+TTrQF6pwksSKOpScL0/ceeMWtSugbMloMFrnPOqUsUyrUy5Vj4ZoeT9pcZDP9PlE37TqmXR56LB3UdVef8K7VNvvudGNSR+YBlM3kXEbuyl5ta+UEEN0991g6QlFiikXgUvQeo7oUkWRlXuK35qDQH4LgpNvxi+12Fi/NJQBzVfGv85ZYwOB8koRTx1IcPf29afdfaPDcAJ8LoB+Omv/TjcMANvbNeHub2b1hEmYPhpE3BxThMQaJz9CPyr8eng3dV60Em+1+1B0yMkJMX1vKY0lu0J5C/EhsA9+aUp66p1b+fdKMzJZB7moPdt1puBLfUajJ2TaN7W9hFZwlgmh0LE44yNGE3GcvRFUpAJZTEi9uEoBi7yE+OPvETnSOFjm+OE++02x5UCLe2RC+/WBuRI3kHaNsCr1RGcvfvg3D+gn7Y/2Ij63xltkf/mHX38CzTFehY+CgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=6f49ca9cc313561049d67d0ed401316c"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=6f49ca9cc313561049d67d0ed401316c^sys_idNOT IN96da8a90c353561049d67d0ed4013195,b7daca90c353561049d67d0ed4013150,d2da8a90c353561049d67d0ed4013193,d2da8a90c353561049d67d0ed4013196"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9eda8a90c353561049d67d0ed4013194</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Refund Lifecycle">6f49ca9cc313561049d67d0ed401316c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>fe2a4dda-0310-4dd1-8c16-e1626f1fe6aa</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:00</sys_created_on>
+        <sys_id>96da8a90c353561049d67d0ed4013195</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:55:29</sys_updated_on>
+        <ui_id>04c7a84a-e4fa-41b8-b3e4-d9b1fa5bb588</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">bfdaca90c353561049d67d0ed401314f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Refund Lifecycle">6f49ca9cc313561049d67d0ed401316c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>e0578544-bea3-49ab-9f33-3f5189d7e27f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:06</sys_created_on>
+        <sys_id>b7daca90c353561049d67d0ed4013150</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:55:29</sys_updated_on>
+        <ui_id>e4a7f3be-7b54-409f-955a-2f753ac39e70</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">56da8a90c353561049d67d0ed4013192</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Refund Lifecycle">6f49ca9cc313561049d67d0ed401316c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:00</sys_created_on>
+        <sys_id>d2da8a90c353561049d67d0ed4013193</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:55:29</sys_updated_on>
+        <ui_id>fe2a4dda-0310-4dd1-8c16-e1626f1fe6aa</ui_id>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8lUJnWaBetuNb0CJAgbYBmiCXNhBWJGUTpUiVpOy4gv+9Sz1sI3HQosixN3KWuzsz2lUX6NY1rbP3+tpasVbB6ttjGAjlMTx3gYKaB6uAasWEE1oVPRAGW5CtD+CRCdtI2D+cELoRkhk+VmvAYI7jJlh1z0Ju3/BCQsklJt45I9Qa0wXDW0Wgiq9oTNNkniaEJMssLudpGScsBQ4pvpsS30/k3n3qkfBV1r4f4nbqpA3ztGISBvzJccU4tq5AWh4GNSgGTpv9ETEc2K2SJ2AjlBsU1/BkxS+sneS5f1hx1EhHO47XYrRqckkLym8bT3BAHJRyslDLtlZfBh3eZF5BK92Zya3FerzxpD2LkVJ1t9G7r1PDG6F6gWNQagryeAOHNpSt49Z/GC55jYWKGpoGzSkao7eiT0YudbSWeIkqqXfY1E9KBNQTj9AjiG4Q/9DDD2CEV/EZy2DyQLMEK2jRTxWWcwYlHHpbip+tJzQIHKUUgxv4wFIjGneNfbZ8ZH0IX47k2TR23XIxL7Msh1mZlItZBgxPcZ7N8iVJqzIlbEF4hNxQHcjCOnD8cPjeEpKyAcUJeDHSb1X2LfbiCvIqj0l+eS+y+aW9uLARry9D8odl8J/vL3eBEPJ/Gc6XQdhiGOpRW9/8n3fh0Q/+0MEOc8M4FRaJ3Hvs4/QX94E9DoCg59BOmx9ewgk7/AZdcULsDwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">dada8a90c353561049d67d0ed4013195</block>
+        <comment/>
+        <connected_to>fe2a4dda-0310-4dd1-8c16-e1626f1fe6aa</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Refund Lifecycle">6f49ca9cc313561049d67d0ed401316c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:00</sys_created_on>
+        <sys_id>d2da8a90c353561049d67d0ed4013196</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:55:29</sys_updated_on>
+        <ui_id>e0578544-bea3-49ab-9f33-3f5189d7e27f</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=6f49ca9cc313561049d67d0ed401316c"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=6f49ca9cc313561049d67d0ed401316c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_6f49ca9cc313561049d67d0ed401316c^sys_idNOT IN0eda0690c353561049d67d0ed401319b,8ada8a90c353561049d67d0ed401315a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6f49ca9cc313561049d67d0ed401316c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:00</sys_created_on>
+        <sys_id>0eda0690c353561049d67d0ed401319b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 18:48:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6f49ca9cc313561049d67d0ed401316c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:00</sys_created_on>
+        <sys_id>8ada8a90c353561049d67d0ed401315a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 18:48:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_6f49ca9cc313561049d67d0ed401316c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_6f49ca9cc313561049d67d0ed401316c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_6f49ca9cc313561049d67d0ed401316c"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>refund_lifecycle</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Refund Record","reference":"x_1105246_refund_refund","reference_display":"Refund","type":"reference","base_type":"reference","usedInstances":{"79f22ae8-cf9c-40ec-a434-0f8a0ad831f0":["record"],"876b445a-b2b7-4ada-b154-5803fb30d70e":["record"],"e19b06bd-592b-4a64-aea6-29512ee0913b":["record"],"6fb9f23b-5081-4be2-8b67-d1a951e27e2b":["record"]},"attributes":{}},{"name":"{{static.8622f1dcc39f161049d67d0ed40131e7}}","label":"HR Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"876b445a-b2b7-4ada-b154-5803fb30d70e":["approval_conditions"]}},{"name":"876b445a-b2b7-4ada-b154-5803fb30d70e.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"fe2a4dda-0310-4dd1-8c16-e1626f1fe6aa":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Refund Lifecycle</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Refund Lifecycle">6f49ca9cc313561049d67d0ed401316c</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4dea0e90c353561049d67d0ed4013117</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:55:31</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=4dea0e90c353561049d67d0ed4013117"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4dea0e90c353561049d67d0ed4013117"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=4dea0e90c353561049d67d0ed4013117"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=4dea0e90c353561049d67d0ed4013117^sys_idNOT IN81ea0e90c353561049d67d0ed4013119"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>4dea0e90c353561049d67d0ed4013117</id>
+        <name>Refund Lifecycle</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:11</sys_created_on>
+        <sys_id>81ea0e90c353561049d67d0ed4013119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 18:48:11</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=81ea0e90c353561049d67d0ed4013119"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=4dea0e90c353561049d67d0ed4013117^sys_idNOT IN05ea0e90c353561049d67d0ed4013133,81ea0e90c353561049d67d0ed401311a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Refund Lifecycle">4dea0e90c353561049d67d0ed4013117</model>
+        <model_id>4dea0e90c353561049d67d0ed4013117</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_4dea0e90c353561049d67d0ed4013117</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:12</sys_created_on>
+        <sys_id>05ea0e90c353561049d67d0ed4013133</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:55:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=05ea0e90c353561049d67d0ed4013133"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Refund Lifecycle">4dea0e90c353561049d67d0ed4013117</model>
+        <model_id>4dea0e90c353561049d67d0ed4013117</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_4dea0e90c353561049d67d0ed4013117</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:11</sys_created_on>
+        <sys_id>81ea0e90c353561049d67d0ed401311a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:55:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=81ea0e90c353561049d67d0ed401311a"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=4dea0e90c353561049d67d0ed4013117"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4dea0e90c353561049d67d0ed4013117"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=4dea0e90c353561049d67d0ed4013117^sys_idNOT INc1ea0e90c353561049d67d0ed4013145"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Refund Lifecycle">4dea0e90c353561049d67d0ed4013117</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:12</sys_created_on>
+        <sys_id>c1ea0e90c353561049d67d0ed4013145</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 18:48:12</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACuvgS521re9EA2w3qZNuHIBUoaWgTpSlXopS4i/x7h7rYsi6+Z5O87MIkxTlzeOYMmYfvOicucP1avycuB72jMyEhFITfr5aAw1INO4Is1NyCCJ/IIFzp1zKMoaMHoQ+hfm129ITwGO5W0Y2PH+HS9Iv8cz2fxt/PjmkaPavbd0KgsfDz/3CFz6IlJ6s/84XTYtybM+6HIPTrh8eOviQhbixV0O+VKaYie9QjQwsMzzZtyzIM66prun3bNS3fJmAYuGE14QpS2ZD3Jk14liB8wFCU8AgaKAmB+LeCr9Yr5shoxsmCPEfsP9z9ylDrKCB2D7K59U8nJyIb9uYB8+B2KVkgspEMZzYZ8Hghvmb4FYVAScxlQSGOxBHuB0sFWYHIEdG7efA0LQJ+ZiLNLp/kgUf4+heRMmRuLCFShFPGkXon4yYK4jBFP52Mbqdj569P96PfJlNnOrm7n96M7idj/SXNy/k3VjtmCHMsTpbOy/rcPzPg6gBFvHARTUePvJAt5SdPsgRyOC+djVxHgfBZykpNsl4xFW1LNk+pOEzDaFWtV9q8UO7fkz/qKs0Gj5Nov0+ID6RFoi4tSbScZAM02ZBvObtdYs1HDlFr1zDeSK9ZRZ0s10XgAx9vttNxcjZDATOxjKVi64kIGTkycIjvOyUe1VLEtE+/WW4ve8UaxgI/cNbnUZdsStuavy8sQrgPWHAFN+mWOE+/5FtOY6EFeHD4j+bFIVIjtcLC6M2CzHJG6R1w8GRJBPRbVP71O4siJmYl1OugKQe1mOtwKCatSCmLHZ0Z/PHEeq3zm1R4q9Tt0UVrmpS6QC1joErWNGyXmsbA6BHq24bhWaWirYNpRSkrp/8qxXtc6Uap7vgBKqtSnIM3ysI/SDHJttwKEpQacocYXQaaeSFoloJWcTr7KKtbyzIbHlfuPjtSu3BHJ35C8Av/UMc70OwoD57QZU8wOpd4/8zCILv7bTmP2lNjQtus0H7K+fv5gqZHgxB2A9he8UZ2t2G40CgRqwsYnU1NdwhdMNDfbLQ2tzccuh6xKB30B2CZFaPbwGjE9iEMbo+wkiZltpldo0aSJmkdYXNnAKxZ3tEAzze7XJiNVpfNfQxTe5qDcBBq6HBlWzVvm3HmQzF3cmHXoiSbUj63uOnV0OuZg4E3wGcHFjftgkvMrtUjw0HfvupVirsGZRdM2UDCD3mMRKsoBdJS+N+yqff1kH5NhUYgpWoyx/degbfT9BuSBSn1P3UsWuofQah9DcQvN5t12h1gW0tfpJdqwoegUAervS4MN5Dz2i0AQ/+K41uh1e2xhZW3fBNV9JBsp3X2mwi6V70htZvdhA6b3GQDph3mu780HFgMSWtZNd0eDtV20lgire3+BLVWZFK+B+y4qFyKFPPipFivR4p99uWoqMXWh+ApYD9Qt0qvEOe0LBUTnICWfXocaDihYRCNUS3/qx++692VJueAlHK8BWNATUU/16DLDaMOZa3gHwsku1fXGhcOa/ld6U17UuXUL/uEBX9Aej275ZY7rD5hmwDtwfvuO9TRBZA01dPONnXcvtU9GxtVSZ3bijiwBV006+Y+dF7WjZ1oX9bn95hdD/AGFO+0ezz+D8AI5KetHgAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=4dea0e90c353561049d67d0ed4013117^sys_idNOT IN05ea0e90c353561049d67d0ed4013144,0dea0e90c353561049d67d0ed4013143,0dea0e90c353561049d67d0ed4013144,c9ea0e90c353561049d67d0ed4013142"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Refund Lifecycle">4dea0e90c353561049d67d0ed4013117</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>fe2a4dda-0310-4dd1-8c16-e1626f1fe6aa</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:12</sys_created_on>
+        <sys_id>05ea0e90c353561049d67d0ed4013144</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:55:30</sys_updated_on>
+        <ui_id>e19b06bd-592b-4a64-aea6-29512ee0913b</ui_id>
+        <values>H4sIAAAAAAAA/+VVTW8aMRD9K8jnFbLZhQZuVVDUSmkikSqXkK6MPQuWvB+1vSQU8d876/USlKCUSLmgckGer33veWb8sCVKkglJQFI2ZiMRszgeUDq4SNhiFC/YQMYcgJGIFDwHjDQgSiPxvOa6bgzb7aUB7kCmrC9qY6Bwux36pbKV5pv7EIYWsVJaop9MHh4jUnGDFR0YMtm+cp0KSfMFaAyddZheY3SbqjnLUtQ54kpVZ7wOmdPg6X2fogeTGjiMRgSeHRQSEEjGtYWI5LyQ3JVmQybO1GhA0vK20Jt9xEoVriWa82er/uCXE9rEZYDMRBBhf0yDQK05m3LH77CycLXZ61UqAbbVRELGa+0uD21twG3lVFm0KY4vdJdd6jovblpFyL7AwX3UFkFA1fBskLe0srtV+TTrQF6pwksSKOpScL0/ceeMWtSugbMloMFrnPOqUsUyrUy5Vj4ZoeT9pcZDP9PlE37TqmXR56LB3UdVef8K7VNvvudGNSR+YBlM3kXEbuyl5ta+UEEN0991g6QlFiikXgUvQeo7oUkWRlXuK35qDQH4LgpNvxi+12Fi/NJQBzVfGv85ZYwOB8koRTx1IcPf29afdfaPDcAJ8LoB+Omv/TjcMANvbNeHub2b1hEmYPhpE3BxThMQaJz9CPyr8eng3dV60Em+1+1B0yMkJMX1vKY0lu0J5C/EhsA9+aUp66p1b+fdKMzJZB7moPdt1puBLfUajJ2TaN7W9hFZwlgmh0LE44yNGE3GcvRFUpAJZTEi9uEoBi7yE+OPvETnSOFjm+OE++02x5UCLe2RC+/WBuRI3kHaNsCr1RGcvfvg3D+gn7Y/2Ij63xltkf/mHX38CzTFehY+CgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Refund Lifecycle">4dea0e90c353561049d67d0ed4013117</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:12</sys_created_on>
+        <sys_id>0dea0e90c353561049d67d0ed4013143</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 18:48:12</sys_updated_on>
+        <ui_id>876b445a-b2b7-4ada-b154-5803fb30d70e</ui_id>
+        <values>H4sIAAAAAAAA/+1XXU/bMBT9K8jPVZc0/X5DVEibNpCA8UJR5NoONXKdzHaALup/343tpKEdXbv1hW1PyPfDOfdwjl3fFYhTNEaDYdJho1EnmIVBEAXBsEeCYcRm0aA/iDAJUAtJvGBQqRhJFYX1ExZ5GSiKM8WwYTQO2yRXikmzWkGecp0JvLz1ZRAhcy4o5NH47r6FMqxgR8MUGhcbqX0hCTxjAkqvKkybGM0yK9c0JfkCcMW8Cn72nROfOfk4gQw0lXCCFmIvhknKAEeChWYttMCSYpOqJRoblUMAZqaXUizrijmXxs25wC+af4cPR52yLmEwGPEc1MvY8+PCyQQbfA07E5Ormq6UE6YdJZQlOBfmrBlzBZeZ4al0LQbPRNWdinwhLxwhqN6g8e/INYBgWTlnidyNlVzP0+erCuQ5l5YRP6JICRb1Chuj+Cw3JZwCMcEsxQucZVw+xJlKn7htBiiL9oOARTsR6TN8U/MH2cakxN0GVnH7HOITG77FipdDfIFtoHnVQnqpzwTWej0KcBh/y0skbjA/QmxZcBSUfUTxzJzCV56Yx7xqebnPyE5tkbWU3HZrtb/EYRj0Ot1+DChySf2fbb1fVfHDVL8Hskr1Nx7aBlKvebuMbe615G3byYVLeMWHuxXvI2vJO638RPHD4B0p3o/17iX/K7UH4S5N0eFaQ4AAZsAiTjgTzUO+SmzrvJE5TOl7oKqUfuq/cXLuYb0F12vfLn+mfdu/of3Ogdp/+7gfBsF7kv+/dOCTnWJj0VpTj2mu5A4HxHOurTLedEKj4jBH7AGycsQnh3LTEJvgf8cP0X8//P1+6PZ2Sq3xs6JWNUkl5SVi3XCFO5mZvmKPjBh9Kpdf74pCG2w4aQ/7nU4SUkKiURL2w6A7ov0BDRjtBmEUssFqdb/toiPseJjr9qCifmfkgulfUeM9VyeVb2r6rr7Qqh2997rHenm8M+v9K7/EyE6tJaO1tmgOBMGruvnQniIHe4rGUyRTyaaoNUVlVVyKy4ahAsDVCRsritXKRXKF/QZhY7nupnipbaUmc0ZBmzb6KhJbM/j4Md75e3BS+W+Ss5OJI2WbJu+7GqfjhW/dede+wO704YY3777e0e6+7n/7/an9ACaP6+cFXGxw+h3Rk/c/AEJVAb78EgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Refund Lifecycle">4dea0e90c353561049d67d0ed4013117</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>e0578544-bea3-49ab-9f33-3f5189d7e27f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:12</sys_created_on>
+        <sys_id>0dea0e90c353561049d67d0ed4013144</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 18:56:10</sys_updated_on>
+        <ui_id>6fb9f23b-5081-4be2-8b67-d1a951e27e2b</ui_id>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K5WfoyghgFreJhDSpK6V6MRLV0WOfQOeHCezHQpD/PfdJE6IoOuo1Bc0XpDvl8+5OSd53hPByYQMgQfhXThmURhFgyAY3A7DZBwl4YBHFCAkHlE0A6zUwHLN8byhsqwC+/1UA7XA49Bnpdag7OGAeS5MIelu6cowwtZCcsyTyfOLRwqqcaIFTSb7k9SlkCRNQGLposV0itHuiurMc1ZmiCsWbfDedc5c5ubrDDPYVMEJA4/A1oLigEBSKg14JKOKU5vrHZlYXWIASfNHJXddxVoo2xDN6NaI33jzMKjqUkBmzC2hO8ZuQU04nVFLn3Ays6Xu9pULBqbZCYeUltJO+7Gm4LGwIldNi6WJbLtzWWbqodkI6Qb0nkdpEAQUFc8KeUMrfVrnr4sW5FyoeiWOoswZld2JWqtFUtoKzp6AhHrHGS0KoVZxofONqJsRSuavJB78VOaveKcRK+VTVuH2cavUn2N8VoeXVIuKxDccg80Hj5idmUpqzJEK7jD+VVZIGmKOQlxvoV5BXCuhamZaFPYLXrUBB/zgOdEno/cUxu6OgurNPAp/G4dhMBoMxzHiKRV3f+fSX7TxjxngAnitAb7Xj/1tuM4DZ7H7fu/NQ5NwDhh9mgNur8kBjsbVW+Bfwg8G775ae0qqtW56okdISIrKH2UQRCjYn8Dw1X+u+b/WfcwDFyBtPTAXILl5A3prAMgQoIW4oXJiApe8Wbpk9yn4NCeE46D+XZEf/psvwssfGwmzJAgJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Refund Lifecycle">4dea0e90c353561049d67d0ed4013117</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:12</sys_created_on>
+        <sys_id>c9ea0e90c353561049d67d0ed4013142</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 18:48:12</sys_updated_on>
+        <ui_id>79f22ae8-cf9c-40ec-a434-0f8a0ad831f0</ui_id>
+        <values>H4sIAAAAAAAA/+VVXWviQBT9K2WeQ0iMSuvboggL3Rbs4ku3hMnMjQ5MPnY+rK743/cmmcSgbddCX2R9kblfc87NOcnznghOJmQIPAjvwjGLwigaBMHgdhgm4ygJBzyiACHxSE4zwEoFrFAczxsqbRXY76cKqAEehz6zSkFuDgfMc6FLSXdLV4YRthaSY55Mnl88UlKFEw0oMtmfpC6FJGkCEksXLaZTjGZXVmdeMJshrli0wXvXOXOZm+8zzGBTBScMPAJbAzkHBJJSqcEjGc05NYXakYlRFgNImj/mctdVrEVuGqIZ3WrxB28eBlVdCsiMuSV0x9gtqAmnM2roE05mxqpuX4VgoJudcEiplWbajzUFj6URRd60GJrItruQNssfmo2QbkDveViNIKCseFbIG1rp07p4XbQg5yKvV+IoyoJR2Z2oMUok1lRw9gQk1DvOaFmKfBWXqtiIuhmhZP5K4sFPZfGKd2qxyn3KKtw+bpX6c4zP6vCSKlGR+IFjsPngEb3TU0m1PlLBHca/bYWkIeYoxPUW6hXEtRKqZqZEab7hVRtwwA+eE30y+khh7O4oqN7Mo/C3cRgGo8FwHCMem3P3dy79RRv/nAEugNca4Gf92N+G6zxwFrvv9948NAnngNGXOeD2mhzgaFy9Bf4l/GDw4au1p6Ra67onem2osfqXDYKIa5tkwuCb/1zy75V9zgEX4GwdMBcguX4DeCt/yBCfgbghcmIBl7xZumT3IfgyH4TjoP5dkRv+m+/By1+aDTX4BgkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=4dea0e90c353561049d67d0ed4013117"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=4dea0e90c353561049d67d0ed4013117^sys_idNOT IN01ea0e90c353561049d67d0ed4013141,4dea0e90c353561049d67d0ed401313e,81ea0e90c353561049d67d0ed4013140,8dea0e90c353561049d67d0ed4013141"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">dada8a90c353561049d67d0ed4013195</block>
+        <comment/>
+        <connected_to>fe2a4dda-0310-4dd1-8c16-e1626f1fe6aa</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Refund Lifecycle">4dea0e90c353561049d67d0ed4013117</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:12</sys_created_on>
+        <sys_id>01ea0e90c353561049d67d0ed4013141</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:55:30</sys_updated_on>
+        <ui_id>e0578544-bea3-49ab-9f33-3f5189d7e27f</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">56da8a90c353561049d67d0ed4013192</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Refund Lifecycle">4dea0e90c353561049d67d0ed4013117</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:12</sys_created_on>
+        <sys_id>4dea0e90c353561049d67d0ed401313e</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:55:30</sys_updated_on>
+        <ui_id>fe2a4dda-0310-4dd1-8c16-e1626f1fe6aa</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPrpG/kjRvJaUw6FZYS1+2Yq4lORGTLU+Sk2Yh/31XtuOENmMr6+PepCPdq3OO78E7olvXtM4+6Ctr5bIm869PAZG1x3C9IzVUgswJ0zWXTuo674CArEG1/gCXXNpGwfbxiLCVVNyIoVsDBmucMGS+e3EkORaUFMrokkUsiSdJTGk8S6NikhRRzBMQkGBDBYVQeHVxoPHhtkOC3/Jz28bj1hlZL4f97dDl/gBqwz2riAZEPDtRc4F8SlBWBKSCmoPTZjsiRgC/q9URWMna9YIreLbyJz4YZ5m/WAqUyAY3xm0+ONXD5TU4QCotc60ZjdOSCdubw0UJrXKLU6y/cNd4qX2Jg0IdqrVqq/pz7wgZG5x8mNYiCdF4pZ76oKO8X+nNlwPLG1l3rgyHSjNQ4w4cele0zvPZEaFEhY3yCpoGHc0bo9eyK0YuVbhUuAlLpTf4qJ+uEJgnHqKxEN4gft3Bj2CkV/EJ22BxT7MAK1neTSK2Q5sE2QfEbu1CgbVHkehu/qP1FHvJg7i898eXMCMbd4Uvr8WgYx+8HuyTmd7tZtNJkaYZXBRxMb1IgeMqytKLbEaTskgon1IRIlvUCyq3DpzY77+1lCa8R3GQXgXjvdq+LV2XkJVZRLPz6Uon59J1JldvjFT8h0j57/mXiaKU/o/UP0dK2rwPwqCte/wdE/Xk49O/OXrNpEVqDx77ePij+IMtDpdkp9BGm+9e1BHb/wLnsbTmmwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9eda8a90c353561049d67d0ed4013194</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Refund Lifecycle">4dea0e90c353561049d67d0ed4013117</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>fe2a4dda-0310-4dd1-8c16-e1626f1fe6aa</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:12</sys_created_on>
+        <sys_id>81ea0e90c353561049d67d0ed4013140</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:55:30</sys_updated_on>
+        <ui_id>04c7a84a-e4fa-41b8-b3e4-d9b1fa5bb588</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">bfdaca90c353561049d67d0ed401314f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Refund Lifecycle">4dea0e90c353561049d67d0ed4013117</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>e0578544-bea3-49ab-9f33-3f5189d7e27f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:12</sys_created_on>
+        <sys_id>8dea0e90c353561049d67d0ed4013141</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:55:31</sys_updated_on>
+        <ui_id>e4a7f3be-7b54-409f-955a-2f753ac39e70</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=4dea0e90c353561049d67d0ed4013117"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=4dea0e90c353561049d67d0ed4013117"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_4dea0e90c353561049d67d0ed4013117^sys_idNOT IN49ea0e90c353561049d67d0ed4013137,c1ea0e90c353561049d67d0ed4013124"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4dea0e90c353561049d67d0ed4013117</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:12</sys_created_on>
+        <sys_id>49ea0e90c353561049d67d0ed4013137</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 18:48:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4dea0e90c353561049d67d0ed4013117</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:12</sys_created_on>
+        <sys_id>c1ea0e90c353561049d67d0ed4013124</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 18:48:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_4dea0e90c353561049d67d0ed4013117"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_4dea0e90c353561049d67d0ed4013117"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_4dea0e90c353561049d67d0ed4013117"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>6f49ca9cc313561049d67d0ed401316c</sys_id>
+        <latest_snapshot>4dea0e90c353561049d67d0ed4013117</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch4-11-22-2024_12-02-2024_1408.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=6f49ca9cc313561049d67d0ed401316c^sys_idNOT IN81ea0e90c353561049d67d0ed4013172"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"81ea0e90c353561049d67d0ed4013172","name":"plan","plan_signature":null}}</plan>
+        <plan_id>6f49ca9cc313561049d67d0ed401316c</plan_id>
+        <snapshot>86dadad4c393561049d67d0ed401314f</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:48:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>81ea0e90c353561049d67d0ed4013172</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:55:31</sys_updated_on>
+        <trigger display_value="">01ea0e90c353561049d67d0ed4013170</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=6f49ca9cc313561049d67d0ed401316c"/>
+</record_update>

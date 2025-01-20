@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="New section 1" section_id="76a10a54c313561049d67d0ed4013179" sys_domain="global" table="x_1105246_refund_refund" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>amount_brl</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-01-20 18:07:55</sys_created_on>
+            <sys_id>c3a10a54c313561049d67d0ed40131aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New section 1" display_value="New section 1" name="x_1105246_refund_refund" sys_domain="global" view="Default view">76a10a54c313561049d67d0ed4013179</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-01-20 18:07:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-01-20 18:07:55</sys_created_on>
+            <sys_id>cba10a54c313561049d67d0ed40131aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New section 1" display_value="New section 1" name="x_1105246_refund_refund" sys_domain="global" view="Default view">76a10a54c313561049d67d0ed4013179</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-01-20 18:07:55</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>amount_usd</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-01-20 18:07:55</sys_created_on>
+            <sys_id>c3a10a54c313561049d67d0ed40131ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New section 1" display_value="New section 1" name="x_1105246_refund_refund" sys_domain="global" view="Default view">76a10a54c313561049d67d0ed4013179</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-01-20 18:07:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-01-20 18:07:55</sys_created_on>
+            <sys_id>cba10a54c313561049d67d0ed40131ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New section 1" display_value="New section 1" name="x_1105246_refund_refund" sys_domain="global" view="Default view">76a10a54c313561049d67d0ed4013179</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-01-20 18:07:55</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-01-20 18:07:55</sys_created_on>
+            <sys_id>c3a10a54c313561049d67d0ed40131ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New section 1" display_value="New section 1" name="x_1105246_refund_refund" sys_domain="global" view="Default view">76a10a54c313561049d67d0ed4013179</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-01-20 18:07:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>rejection_reason</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-01-20 18:07:55</sys_created_on>
+            <sys_id>cba10a54c313561049d67d0ed40131ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New section 1" display_value="New section 1" name="x_1105246_refund_refund" sys_domain="global" view="Default view">76a10a54c313561049d67d0ed4013179</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-01-20 18:07:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>New section 1</caption>
+            <header>false</header>
+            <name>x_1105246_refund_refund</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-01-20 18:07:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>76a10a54c313561049d67d0ed4013179</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1105246_refund_refund</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+            <sys_update_name>sys_ui_section_76a10a54c313561049d67d0ed4013179</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-01-20 18:07:54</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</application>
+        <file_path/>
+        <instance_id>00e1f12c1b7e7950c84543f4bd4bcb85</instance_id>
+        <instance_name>dev225101</instance_name>
+        <name>sys_ui_section_76a10a54c313561049d67d0ed4013179</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="New section 1" section_id="76a10a54c313561049d67d0ed4013179" sys_domain="global" table="x_1105246_refund_refund" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>amount_brl</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-20 18:07:55</sys_created_on><sys_id>c3a10a54c313561049d67d0ed40131aa</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New section 1" display_value="New section 1" name="x_1105246_refund_refund" sys_domain="global" view="Default view">76a10a54c313561049d67d0ed4013179</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-20 18:07:55</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-20 18:07:55</sys_created_on><sys_id>cba10a54c313561049d67d0ed40131aa</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New section 1" display_value="New section 1" name="x_1105246_refund_refund" sys_domain="global" view="Default view">76a10a54c313561049d67d0ed4013179</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-20 18:07:55</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>amount_usd</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-20 18:07:55</sys_created_on><sys_id>c3a10a54c313561049d67d0ed40131ab</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New section 1" display_value="New section 1" name="x_1105246_refund_refund" sys_domain="global" view="Default view">76a10a54c313561049d67d0ed4013179</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-20 18:07:55</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-20 18:07:55</sys_created_on><sys_id>cba10a54c313561049d67d0ed40131ab</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New section 1" display_value="New section 1" name="x_1105246_refund_refund" sys_domain="global" view="Default view">76a10a54c313561049d67d0ed4013179</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-20 18:07:55</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>description</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-20 18:07:55</sys_created_on><sys_id>c3a10a54c313561049d67d0ed40131ac</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New section 1" display_value="New section 1" name="x_1105246_refund_refund" sys_domain="global" view="Default view">76a10a54c313561049d67d0ed4013179</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-20 18:07:55</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>rejection_reason</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-20 18:07:55</sys_created_on><sys_id>cba10a54c313561049d67d0ed40131ac</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New section 1" display_value="New section 1" name="x_1105246_refund_refund" sys_domain="global" view="Default view">76a10a54c313561049d67d0ed4013179</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-20 18:07:55</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>New section 1</caption><header>false</header><name>x_1105246_refund_refund</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-20 18:07:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>76a10a54c313561049d67d0ed4013179</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1105246_refund_refund</sys_name><sys_overrides/><sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package><sys_policy/><sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope><sys_update_name>sys_ui_section_76a10a54c313561049d67d0ed4013179</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-20 18:07:54</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1705138993</payload_hash>
+        <record_name>Refund</record_name>
+        <reverted_from/>
+        <source>6286c118c3db161049d67d0ed40131dd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:07:55</sys_created_on>
+        <sys_id>03a10a54c313561049d67d0ed40131af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19484e656950000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 18:07:55</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>87a10a5416135610e1f0f86b9600b3ae</update_guid>
+        <update_guid_history>87a10a5416135610e1f0f86b9600b3ae:-1705138993</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:09:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>0ecbedf99683443a84e5647724427fa9</sys_id>
+        <sys_metadata>76a10a54c313561049d67d0ed4013179</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New section 1</sys_name>
+        <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
+        <sys_parent display_value="Refund">387df9dcc3df161049d67d0ed40131c0</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_scope_delete display_value="">272e90aa070841128affcdfbfc5ecb09</sys_scope_delete>
+        <sys_update_name>sys_ui_section_76a10a54c313561049d67d0ed4013179</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_76a10a54c313561049d67d0ed4013179">03a10a54c313561049d67d0ed40131af</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 18:09:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

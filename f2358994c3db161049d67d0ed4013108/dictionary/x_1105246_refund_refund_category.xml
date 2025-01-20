@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6cce8990c31f161049d67d0ed401319b" label="Category" max_length="40" name="x_1105246_refund_refund_category" type="collection">
+        <element label="Resolver Group" max_length="40" name="resolver_group" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element label="Category Group" mandatory="true" max_length="32" name="category_group" reference="x_1105246_refund_category_group" type="reference"/>
+        <index name="index">
+            <element name="category_group"/>
+        </index>
+    </element>
+</database>

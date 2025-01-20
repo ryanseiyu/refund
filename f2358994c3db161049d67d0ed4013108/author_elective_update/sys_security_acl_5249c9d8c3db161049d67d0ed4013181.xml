@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_1105246_refund_refund_requests</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 14:01:34</sys_created_on>
+        <sys_id>5249c9d8c3db161049d67d0ed4013181</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1105246_refund_refund_requests</sys_name>
+        <sys_package display_value="Refund" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_update_name>sys_security_acl_5249c9d8c3db161049d67d0ed4013181</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 14:01:34</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</application>
+        <file_path/>
+        <instance_id>00e1f12c1b7e7950c84543f4bd4bcb85</instance_id>
+        <instance_name>dev225101</instance_name>
+        <name>sys_security_acl_5249c9d8c3db161049d67d0ed4013181</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><decision_type>allow</decision_type><description/><local_or_existing>Local</local_or_existing><name>x_1105246_refund_refund_requests</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-20 14:01:34</sys_created_on><sys_id>5249c9d8c3db161049d67d0ed4013181</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1105246_refund_refund_requests</sys_name><sys_package display_value="Refund" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package><sys_policy/><sys_scope display_value="Refund">f2358994c3db161049d67d0ed4013108</sys_scope><sys_update_name>sys_security_acl_5249c9d8c3db161049d67d0ed4013181</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-20 14:01:34</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>471187076</payload_hash>
+        <record_name>x_1105246_refund_refund_requests</record_name>
+        <reverted_from/>
+        <source>6286c118c3db161049d67d0ed40131dd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 14:01:34</sys_created_on>
+        <sys_id>5e49c9d8c3db161049d67d0ed4013183</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1948404cbf40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 14:01:34</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>5249c9d800db16100d043989232fd683</update_guid>
+        <update_guid_history>5249c9d800db16100d043989232fd683:471187076</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:16:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>99e6d18526144e3ea0376855d58e7f31</sys_id>
+        <sys_metadata>5249c9d8c3db161049d67d0ed4013181</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1105246_refund_refund_requests</sys_name>
+        <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
+        <sys_parent display_value="">014949d8c3db161049d67d0ed40131c9</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_scope_delete display_value="">272e90aa070841128affcdfbfc5ecb09</sys_scope_delete>
+        <sys_update_name>sys_security_acl_5249c9d8c3db161049d67d0ed4013181</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_5249c9d8c3db161049d67d0ed4013181">5e49c9d8c3db161049d67d0ed4013183</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 18:16:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

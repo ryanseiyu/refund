@@ -2,7 +2,7 @@
     <sys_user_role action="INSERT_OR_UPDATE">
         <assignable_by/>
         <can_delegate>true</can_delegate>
-        <description>Podem editar a requisição. Só consiguem ver os registros de reembolso dos grupos aos quais o mesmo participam.</description>
+        <description>They can edit the request. They can only see the refund records of the groups to which they belong.</description>
         <elevated_privilege>false</elevated_privilege>
         <grantable>true</grantable>
         <includes_roles/>
@@ -13,13 +13,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-20 13:43:52</sys_created_on>
         <sys_id>c3358994c3db161049d67d0ed401315e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>x_1105246_refund.hr_resolver</sys_name>
-        <sys_package display_value="Refund" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
+        <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Refund">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
         <sys_update_name>sys_user_role_c3358994c3db161049d67d0ed401315e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-20 13:43:52</sys_updated_on>
+        <sys_updated_on>2025-01-20 16:51:38</sys_updated_on>
     </sys_user_role>
 </record_update>
