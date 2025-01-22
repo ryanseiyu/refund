@@ -3,10 +3,13 @@
         <active>true</active>
         <admin_overrides>true</admin_overrides>
         <advanced>false</advanced>
-        <applies_to/>
+        <applies_to table="x_1105246_refund_refund">status=awaiting_payment^statusNOT INcompleted,canceled^EQ<item display_value="Awaiting Payment" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="awaiting_payment"/>
+            <item display_value="completed,canceled" endquery="false" field="status" goto="false" newquery="false" operator="NOT IN" or="false" value="completed,canceled"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </applies_to>
         <condition/>
         <decision_type>allow</decision_type>
-        <description/>
+        <description>Allow write for records in x_1105246_refund_refund if the record matches the criteria (status=awaiting_payment^statusNOT INcompleted,canceled^EQ), for users with role x_1105246_refund.hr_resolver.</description>
         <local_or_existing>Local</local_or_existing>
         <name>x_1105246_refund_refund</name>
         <operation display_value="write">write</operation>
@@ -16,14 +19,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-20 17:49:33</sys_created_on>
         <sys_id>027d7ddcc3df161049d67d0ed4013131</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>x_1105246_refund_refund</sys_name>
         <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
         <sys_policy/>
         <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
         <sys_update_name>sys_security_acl_027d7ddcc3df161049d67d0ed4013131</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-20 17:49:33</sys_updated_on>
+        <sys_updated_on>2025-01-21 14:38:12</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>

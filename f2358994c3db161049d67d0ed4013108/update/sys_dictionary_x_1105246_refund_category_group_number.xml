@@ -11,7 +11,7 @@
         <column_label>Number</column_label>
         <comments/>
         <create_roles/>
-        <default_value>javascript:global.getNextObjNumberPadded();</default_value>
+        <default_value>javascript:global.getNextObjNumberPadded</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -53,7 +53,7 @@
         <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
         <sys_update_name>sys_dictionary_x_1105246_refund_category_group_number</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-20 19:14:09</sys_updated_on>
+        <sys_updated_on>2025-01-21 19:45:27</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

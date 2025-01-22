@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_dictionary action="DELETE" element="categories" table="x_1105246_refund_category_group">
+        <active>true</active>
+        <array>false</array>
+        <attributes/>
+        <audit>false</audit>
+        <calculation/>
+        <choice>0</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label>Categories</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>categories</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <internal_type display_value="">glide_list</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <name>x_1105246_refund_category_group</name>
+        <next_element/>
+        <primary>false</primary>
+        <read_only>true</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1105246_refund_refund_category">x_1105246_refund_refund_category</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 19:29:56</sys_created_on>
+        <sys_id>207416dcc353561049d67d0ed40131c8</sys_id>
+        <sys_name>Categories</sys_name>
+        <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_update_name>sys_dictionary_x_1105246_refund_category_group_categories</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:34:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_dictionary>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</application>
+        <file_path/>
+        <instance_id>00e1f12c1b7e7950c84543f4bd4bcb85</instance_id>
+        <instance_name>dev225101</instance_name>
+        <name>sys_dictionary_x_1105246_refund_category_group_categories</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="categories" table="x_1105246_refund_category_group"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Categories</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>categories</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="">glide_list</internal_type><mandatory>false</mandatory><max_length>1024</max_length><name>x_1105246_refund_category_group</name><next_element/><primary>false</primary><read_only>true</read_only><read_roles/><reference display_value="" name="x_1105246_refund_refund_category">x_1105246_refund_refund_category</reference><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-20 19:29:56</sys_created_on><sys_id>207416dcc353561049d67d0ed40131c8</sys_id><sys_name>Categories</sys_name><sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package><sys_policy/><sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope><sys_update_name>sys_dictionary_x_1105246_refund_category_group_categories</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-20 19:34:08</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+        <payload_hash>-346173398</payload_hash>
+        <record_name>Category Group.Categories</record_name>
+        <reverted_from/>
+        <source>6286c118c3db161049d67d0ed40131dd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 19:34:08</sys_created_on>
+        <sys_id>fd655a10c393561049d67d0ed40131c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194853544de0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 19:34:08</sys_updated_on>
+        <type>Dictionary</type>
+        <update_guid>35655a10fc9356105e9537153e76d9c1</update_guid>
+        <update_guid_history>35655a10fc9356105e9537153e76d9c1:-346173398,a47456dcab535610aabd05c397a87b75:-157491707,607456dc33535610df3e2b3cbefb496a:154353736,1d249e9c6a53561012e435332fb95841:-209561827,e5335a5c4d535610887f896c5b5e966e:-955136175,65e2925cd65356100f759ec4ecee59f8:905384608,32d2925c9c53561052207365326cc745:-1215278876,4992da1c175356104dc366ef2ad47e58:1938639280,d2119a98735356107265b08bafb0f3e5:-157491707,1e119a9891535610c32b1843154283bf:154353736</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 17:00:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_dictionary">sys_dictionary</sys_db_object>
+        <sys_id>40feae12a86f4c18a474b494950b59e4</sys_id>
+        <sys_metadata>207416dcc353561049d67d0ed40131c8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Categories</sys_name>
+        <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
+        <sys_parent display_value="Category Group">49d09298c353561049d67d0ed40131ef</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_scope_delete display_value="">272e90aa070841128affcdfbfc5ecb09</sys_scope_delete>
+        <sys_update_name>sys_dictionary_x_1105246_refund_category_group_categories</sys_update_name>
+        <sys_update_version display_value="sys_dictionary_x_1105246_refund_category_group_categories">fd655a10c393561049d67d0ed40131c1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 17:00:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

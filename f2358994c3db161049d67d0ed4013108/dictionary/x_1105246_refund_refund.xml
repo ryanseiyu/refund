@@ -6,13 +6,14 @@
         <element label="Category" max_length="32" name="category" reference="x_1105246_refund_refund_category" type="reference"/>
         <element choice="1" label="Status" max_length="40" name="status" type="choice">
             <choice>
+                <element inactive_on_update="false" label="Completed" sequence="6" value="completed"/>
                 <element inactive_on_update="false" label="Submitted" sequence="0" value="submitted"/>
-                <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
+                <element inactive="true" inactive_on_update="true" label="Approved" sequence="2" value="approved"/>
                 <element inactive_on_update="false" label="Awaiting Payment" sequence="4" value="awaiting_payment"/>
-                <element inactive_on_update="false" label="Canceled" sequence="6" value="canceled"/>
-                <element inactive_on_update="false" label="Under Review" sequence="1" value="under_review"/>
+                <element inactive_on_update="false" label="Canceled" sequence="7" value="canceled"/>
+                <element inactive="true" inactive_on_update="true" label="Under Review" sequence="1" value="under_review"/>
                 <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
-                <element inactive_on_update="false" label="Paid" sequence="5" value="paid"/>
+                <element inactive="true" inactive_on_update="true" label="Completed " sequence="5" value="paid"/>
             </choice>
         </element>
         <element label="Amount USD" max_length="40" name="amount_usd" type="currency2"/>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>expense_date</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Validate Expense Date</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return; // Não faça nada ao carregar ou se a variável estiver vazia
+    }
+
+    // Obter a data atual sem a parte do tempo
+    var today = new Date();
+    today.setHours(0, 0, 0, 0); // Define para a data atual sem a parte do tempo
+
+    // Converter a data de despesa para um objeto Date
+    var expenseDate = new Date(newValue);
+
+    // Verificar se a data da despesa é maior que a data atual
+    if (expenseDate > today) {
+        // Exibir uma mensagem de erro ao usuário
+        g_form.showFieldMsg('expense_date', 'A data de despesa não pode estar no futuro.', 'error');
+
+        // Limpar o valor da variável para forçar o usuário a corrigir
+        g_form.setValue('expense_date', '');
+    } else {
+        // Remover qualquer mensagem de erro se a validação for bem-sucedida
+        g_form.hideFieldMsg('expense_date');
+    }
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-22 13:27:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5ef3977cc35fd61049d67d0ed401315e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Validate Expense Date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_update_name>sys_script_client_5ef3977cc35fd61049d67d0ed401315e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-22 13:27:51</sys_updated_on>
+        <table>x_1105246_refund_refund</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</application>
+        <file_path/>
+        <instance_id>00e1f12c1b7e7950c84543f4bd4bcb85</instance_id>
+        <instance_name>dev225101</instance_name>
+        <name>sys_script_client_5ef3977cc35fd61049d67d0ed401315e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;expense_date&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Validate Expense Date&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return; // Não faça nada ao carregar ou se a variável estiver vazia
+    }
+
+    // Obter a data atual sem a parte do tempo
+    var today = new Date();
+    today.setHours(0, 0, 0, 0); // Define para a data atual sem a parte do tempo
+
+    // Converter a data de despesa para um objeto Date
+    var expenseDate = new Date(newValue);
+
+    // Verificar se a data da despesa é maior que a data atual
+    if (expenseDate &gt; today) {
+        // Exibir uma mensagem de erro ao usuário
+        g_form.showFieldMsg('expense_date', 'A data de despesa não pode estar no futuro.', 'error');
+
+        // Limpar o valor da variável para forçar o usuário a corrigir
+        g_form.setValue('expense_date', '');
+    } else {
+        // Remover qualquer mensagem de erro se a validação for bem-sucedida
+        g_form.hideFieldMsg('expense_date');
+    }
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-22 13:27:51&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5ef3977cc35fd61049d67d0ed401315e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Validate Expense Date&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund"&gt;f2358994c3db161049d67d0ed4013108&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Refund App - Ryan Kimura"&gt;f2358994c3db161049d67d0ed4013108&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_5ef3977cc35fd61049d67d0ed401315e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-22 13:27:51&lt;/sys_updated_on&gt;&lt;table&gt;x_1105246_refund_refund&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-466817072</payload_hash>
+        <record_name>Validate Expense Date</record_name>
+        <reverted_from/>
+        <source>6286c118c3db161049d67d0ed40131dd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-22 13:27:51</sys_created_on>
+        <sys_id>0cc41f7cc35fd61049d67d0ed4013163</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1948e32a5d90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-22 13:27:51</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>00c41f7c2e5fd610b6e5c5b216054e63</update_guid>
+        <update_guid_history>00c41f7c2e5fd610b6e5c5b216054e63:-466817072</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-22 13:32:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>25f79fa886ae4f7482b26c3f758e1f91</sys_id>
+        <sys_metadata>5ef3977cc35fd61049d67d0ed401315e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Validate Expense Date</sys_name>
+        <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
+        <sys_parent display_value="Refund">387df9dcc3df161049d67d0ed40131c0</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_scope_delete display_value="">272e90aa070841128affcdfbfc5ecb09</sys_scope_delete>
+        <sys_update_name>sys_script_client_5ef3977cc35fd61049d67d0ed401315e</sys_update_name>
+        <sys_update_version display_value="sys_script_client_5ef3977cc35fd61049d67d0ed401315e">0cc41f7cc35fd61049d67d0ed4013163</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-22 13:32:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
