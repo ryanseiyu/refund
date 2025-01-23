@@ -7,7 +7,7 @@
                         /* Optional GlideRecord */ event) {
 
     var gd = new GlideRecord('sys_user_grmember');
-    gd.addQuery('group.name', 'IN', 'IT Refunds Group,Refund HR Resolvers,Kitchen Resolvers Group,Food Refunds Group');
+    gd.addQuery('group.name', 'IN', 'IT Resolvers Group,Food Resolvers Group,Kitchen Resolvers Group');
     gd.orderByDesc('sys_updated_on'); // Sort by the latest updated records first
     gd.query();
 
@@ -17,11 +17,9 @@
         var lastUpdatedTime = gd.sys_updated_on.getDisplayValue();
         var lastUpdatedGroupName = gd.group.name.getDisplayValue();
 
-        // Print the latest updated record's User, Group Name, and Updated Time to the notification
         template.print(
-            "Last updated record User: " + lastUpdatedUser + 
-            ", Group: " + lastUpdatedGroupName + 
-            ", Updated On: " + lastUpdatedTime
+            "Last added User is: " + lastUpdatedUser + 
+            ", of Group: " + lastUpdatedGroupName
         );
     } else {
         // Print a message if no records were found
@@ -34,14 +32,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-21 20:12:28</sys_created_on>
         <sys_id>1666efecc3db961049d67d0ed4013186</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>AddingToGroup</sys_name>
         <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
         <sys_policy/>
         <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
         <sys_update_name>sys_script_email_1666efecc3db961049d67d0ed4013186</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-22 12:54:56</sys_updated_on>
+        <sys_updated_on>2025-01-23 14:06:43</sys_updated_on>
     </sys_script_email>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>1666efecc3db961049d67d0ed4013186</id>

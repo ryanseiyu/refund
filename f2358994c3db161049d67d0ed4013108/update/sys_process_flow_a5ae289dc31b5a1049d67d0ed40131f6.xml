@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
+    <sys_process_flow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1105246_refund_refund">state=5^EQ<item display_value="Awaiting Payment" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="5"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>Awaiting Payment</label>
+        <name>Awaiting Payment</name>
+        <order>200</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 14:39:24</sys_created_on>
+        <sys_id>a5ae289dc31b5a1049d67d0ed40131f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Awaiting Payment</sys_name>
+        <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_update_name>sys_process_flow_a5ae289dc31b5a1049d67d0ed40131f6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 14:39:24</sys_updated_on>
+        <table>x_1105246_refund_refund</table>
+    </sys_process_flow>
+</record_update>

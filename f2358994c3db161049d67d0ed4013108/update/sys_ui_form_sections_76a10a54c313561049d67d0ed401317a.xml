@@ -3,16 +3,16 @@
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-20 18:07:55</sys_created_on>
+            <sys_created_on>2025-01-23 14:41:54</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>cba10a54c313561049d67d0ed401317e</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>1e4fe4ddc31b5a1049d67d0ed4013179</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_1105246_refund_refund" name="x_1105246_refund_refund" sys_domain="global" view="Default view">76a10a54c313561049d67d0ed401317a</sys_ui_form>
-            <sys_ui_section caption="NULL" display_value="" name="x_1105246_refund_refund" sys_domain="global" view="Default view">497d75dcc3df161049d67d0ed401315d</sys_ui_section>
+            <sys_ui_section caption="Refund " display_value="Refund " name="x_1105246_refund_refund" sys_domain="global" view="Default view">9e4fe4ddc31b5a1049d67d0ed4013102</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-20 18:07:55</sys_updated_on>
+            <sys_updated_on>2025-01-23 14:41:54</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_1105246_refund_refund</name>

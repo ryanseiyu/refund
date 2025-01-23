@@ -7,7 +7,10 @@
         <affected_field_on_event/>
         <category display_value="Refund" name="Refund">c50f565cc393561049d67d0ed401319a</category>
         <collection>sys_user_grmember</collection>
-        <condition table="sys_user_grmember">userISNOTEMPTY^EQ<item endquery="false" field="user" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+        <condition table="sys_user_grmember">userISNOTEMPTY^group=252a7e24c31b961049d67d0ed4013152^ORgroup=0a4a7e24c31b961049d67d0ed40131aa^ORgroup=3e5abaacc3d7961049d67d0ed40131af^EQ<item endquery="false" field="user" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item display_table="sys_user_group" display_value="Food Resolvers Group" endquery="false" field="group" goto="false" newquery="false" operator="=" or="false" value="252a7e24c31b961049d67d0ed4013152"/>
+            <item display_table="sys_user_group" display_value="IT Resolvers Group" endquery="false" field="group" goto="false" newquery="false" operator="=" or="true" value="0a4a7e24c31b961049d67d0ed40131aa"/>
+            <item display_table="sys_user_group" display_value="Kitchen Resolvers Group" endquery="false" field="group" goto="false" newquery="false" operator="=" or="true" value="3e5abaacc3d7961049d67d0ed40131af"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <content_type>text/html</content_type>
@@ -61,7 +64,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>22799becc39b961049d67d0ed4013142</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>Adding User to a Group</sys_name>
         <sys_overrides/>
         <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
@@ -69,7 +72,7 @@
         <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
         <sys_update_name>sysevent_email_action_22799becc39b961049d67d0ed4013142</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-22 13:05:45</sys_updated_on>
+        <sys_updated_on>2025-01-23 14:03:26</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

@@ -4,19 +4,7 @@
         <element label="Attachment" max_length="40" name="attachment" type="file_attachment"/>
         <element label="Rejection Reason" max_length="4000" name="rejection_reason" type="string"/>
         <element label="Category" max_length="32" name="category" reference="x_1105246_refund_refund_category" type="reference"/>
-        <element choice="1" label="Status" max_length="40" name="status" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Completed" sequence="6" value="completed"/>
-                <element inactive_on_update="false" label="Submitted" sequence="0" value="submitted"/>
-                <element inactive="true" inactive_on_update="true" label="Approved" sequence="2" value="approved"/>
-                <element inactive_on_update="false" label="Awaiting Payment" sequence="4" value="awaiting_payment"/>
-                <element inactive_on_update="false" label="Canceled" sequence="7" value="canceled"/>
-                <element inactive="true" inactive_on_update="true" label="Under Review" sequence="1" value="under_review"/>
-                <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
-                <element inactive="true" inactive_on_update="true" label="Completed " sequence="5" value="paid"/>
-            </choice>
-        </element>
-        <element label="Amount USD" max_length="40" name="amount_usd" type="currency2"/>
+        <element label="Amount USD" max_length="40" name="amount_usd" type="string"/>
         <element label="Expense Date" max_length="40" name="expense_date" type="glide_date"/>
     </element>
 </database>
