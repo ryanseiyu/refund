@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="387df9dcc3df161049d67d0ed40131c0" extends="task" label="Refund" max_length="40" name="x_1105246_refund_refund" type="collection">
-        <element label="Amount BRL" max_length="40" name="amount_brl" type="currency"/>
-        <element label="Attachment" max_length="40" name="attachment" type="file_attachment"/>
+        <element label="Amount BRL" max_length="38" name="amount_brl" type="currency"/>
         <element label="Rejection Reason" max_length="4000" name="rejection_reason" type="string"/>
         <element label="Category" max_length="32" name="category" reference="x_1105246_refund_refund_category" type="reference"/>
-        <element label="Amount USD" max_length="40" name="amount_usd" type="string"/>
+        <element label="Amount USD $" max_length="40" name="amount_usd" type="string"/>
         <element label="Expense Date" max_length="40" name="expense_date" type="glide_date"/>
     </element>
 </database>

@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>gs.hasRole('hr_manager') &amp;&amp; current.approval == 'requested';</condition>
+        <condition>gs.hasRole('x_1105246_refund.hr_manager') &amp;&amp; current.approval == 'requested';</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -57,7 +57,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0ff6f859c35b5a1049d67d0ed4013139</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Reject</sys_name>
         <sys_overrides/>
         <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
@@ -65,7 +65,7 @@
         <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
         <sys_update_name>sys_ui_action_0ff6f859c35b5a1049d67d0ed4013139</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 15:31:43</sys_updated_on>
+        <sys_updated_on>2025-01-24 02:49:41</sys_updated_on>
         <table>x_1105246_refund_refund</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

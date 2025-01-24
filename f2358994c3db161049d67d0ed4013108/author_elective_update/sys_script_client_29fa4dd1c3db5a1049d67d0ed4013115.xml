@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Restrict State Choices for HR Resolver</name>
+        <order/>
+        <script><![CDATA[(function onLoad(current, gForm, gUser) {
+    // Check if the user has the specific role
+	
+    // if (gUser.hasRole('c3358994c3db161049d67d0ed401315e')) {
+        // Inform the user about the restriction
+        gForm.addInfoMessage('You can only select "Awaiting Payment" or "Closed Complete" in the State field.');
+
+        // Allowed State values for HR Resolver role
+        var allowedStates = ['3', '5']; // Replace with the actual values for "Awaiting Payment" and "Closed Complete"
+
+        // Get all available choices for the "State" field
+        var stateChoices = gForm.getField('state').choices;
+
+        // Loop through all choices and remove those not allowed
+        for (var i = 0; i < stateChoices.length; i++) {
+            var choice = stateChoices[i];
+            if (!allowedStates.includes(choice.value)) {
+                gForm.removeOption('state', choice.value);
+            }
+        }
+    // }
+})(current, gForm, gUser);
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 16:43:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>29fa4dd1c3db5a1049d67d0ed4013115</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Restrict State Choices for HR Resolver</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_update_name>sys_script_client_29fa4dd1c3db5a1049d67d0ed4013115</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 16:51:45</sys_updated_on>
+        <table>x_1105246_refund_refund</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</application>
+        <file_path/>
+        <instance_id>00e1f12c1b7e7950c84543f4bd4bcb85</instance_id>
+        <instance_name>dev225101</instance_name>
+        <name>sys_script_client_29fa4dd1c3db5a1049d67d0ed4013115</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Restrict State Choices for HR Resolver&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[(function onLoad(current, gForm, gUser) {
+    // Check if the user has the specific role
+	
+    // if (gUser.hasRole('c3358994c3db161049d67d0ed401315e')) {
+        // Inform the user about the restriction
+        gForm.addInfoMessage('You can only select "Awaiting Payment" or "Closed Complete" in the State field.');
+
+        // Allowed State values for HR Resolver role
+        var allowedStates = ['3', '5']; // Replace with the actual values for "Awaiting Payment" and "Closed Complete"
+
+        // Get all available choices for the "State" field
+        var stateChoices = gForm.getField('state').choices;
+
+        // Loop through all choices and remove those not allowed
+        for (var i = 0; i &lt; stateChoices.length; i++) {
+            var choice = stateChoices[i];
+            if (!allowedStates.includes(choice.value)) {
+                gForm.removeOption('state', choice.value);
+            }
+        }
+    // }
+})(current, gForm, gUser);
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-23 16:43:39&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;29fa4dd1c3db5a1049d67d0ed4013115&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Restrict State Choices for HR Resolver&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund"&gt;f2358994c3db161049d67d0ed4013108&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Refund App - Ryan Kimura"&gt;f2358994c3db161049d67d0ed4013108&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_29fa4dd1c3db5a1049d67d0ed4013115&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-23 16:51:45&lt;/sys_updated_on&gt;&lt;table&gt;x_1105246_refund_refund&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-602498303</payload_hash>
+        <record_name>Restrict State Choices for HR Resolver</record_name>
+        <reverted_from/>
+        <source>6286c118c3db161049d67d0ed40131dd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 16:51:45</sys_created_on>
+        <sys_id>640d4995c3db5a1049d67d0ed4013157</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1949413adb30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 16:51:45</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>e80d4995f2db5a105d67182074319d56</update_guid>
+        <update_guid_history>e80d4995f2db5a105d67182074319d56:-602498303,9dec855536db5a10a1e99bb7c8edaebf:-1910421919,b7ccc55530db5a108ded2c2e9523d521:-1570680642,5a1cc15543db5a10453e100481976a8f:-1910421919,0efbc15532db5a105c2c8855923b6515:-1391412895,82bb4d15a6db5a1097ee0b02cc001402:1317831046,3d2b41d198db5a10c80fc456e6454e4d:1806918726</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 17:29:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>562c81873e4041f69df7987881c1b264</sys_id>
+        <sys_metadata>29fa4dd1c3db5a1049d67d0ed4013115</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Restrict State Choices for HR Resolver</sys_name>
+        <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
+        <sys_parent display_value="Refund">387df9dcc3df161049d67d0ed40131c0</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
+        <sys_scope_delete display_value="">272e90aa070841128affcdfbfc5ecb09</sys_scope_delete>
+        <sys_update_name>sys_script_client_29fa4dd1c3db5a1049d67d0ed4013115</sys_update_name>
+        <sys_update_version display_value="sys_script_client_29fa4dd1c3db5a1049d67d0ed4013115">640d4995c3db5a1049d67d0ed4013157</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 17:29:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

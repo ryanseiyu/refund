@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
     <sys_ui_policy_action action="INSERT_OR_UPDATE">
         <cleared>false</cleared>
-        <disabled>ignore</disabled>
-        <field>rejection_reason</field>
+        <disabled>true</disabled>
+        <field>opened_by</field>
         <field_message/>
         <field_message_type>none</field_message_type>
-        <mandatory>true</mandatory>
+        <mandatory>ignore</mandatory>
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-20 21:21:08</sys_created_on>
-        <sys_id>daddaa10c317561049d67d0ed40131a8</sys_id>
+        <sys_created_on>2025-01-23 18:18:01</sys_created_on>
+        <sys_id>6db0a911c35f5a1049d67d0ed401319e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>rejection_reason</sys_name>
+        <sys_name>opened_by</sys_name>
         <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
         <sys_policy/>
         <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
-        <sys_update_name>sys_ui_policy_action_daddaa10c317561049d67d0ed40131a8</sys_update_name>
+        <sys_update_name>sys_ui_policy_action_6db0a911c35f5a1049d67d0ed401319e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-20 21:21:08</sys_updated_on>
+        <sys_updated_on>2025-01-23 18:18:01</sys_updated_on>
         <table>x_1105246_refund_refund</table>
-        <ui_policy display_value="Reproval Reason">99bde610c317561049d67d0ed4013147</ui_policy>
+        <ui_policy display_value="Read-only policies">fc3fd99dc31f5a1049d67d0ed4013171</ui_policy>
         <value/>
         <value_action>ignore</value_action>
         <visible>ignore</visible>
     </sys_ui_policy_action>
-    <sys_translated_text action="delete_multiple" query="documentkey=daddaa10c317561049d67d0ed40131a8"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=6db0a911c35f5a1049d67d0ed401319e"/>
 </record_update>

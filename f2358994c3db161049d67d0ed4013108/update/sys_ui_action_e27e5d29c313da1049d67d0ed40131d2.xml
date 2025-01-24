@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>complete</action_name>
+        <action_name>approve</action_name>
         <active>true</active>
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.approval == 'approved'&amp;&amp; gs.hasRole('x_1105246_refund.hr_resolver') </condition>
+        <condition>gs.hasRole('x_1105246_refund.hr_manager') &amp;&amp; current.approval == 'requested';</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -27,18 +27,18 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>Complete</name>
+        <name>Approve</name>
         <onclick/>
         <order>100</order>
         <script><![CDATA[(function executeAction(current, gs, action) {
     // Set the approval state to "Approved"
-    current.state = 3;
+    current.approval = "approved";
     current.update(); // Save the record
 
     // Notify the user about the success
     gs.addInfoMessage('The refund has been successfully completed.');
 
-    if (current.state == 3) {
+    if (current.state == 5) {
         action.setRedirectURL(current); // Redirect back to the form
     }
 })(current, gs, action);]]></script>
@@ -48,32 +48,21 @@
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-23 15:41:29</sys_created_on>
+        <sys_created_on>2025-01-24 12:46:34</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>55acf811c39b5a1049d67d0ed40131a1</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>Complete</sys_name>
+        <sys_id>e27e5d29c313da1049d67d0ed40131d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approve</sys_name>
         <sys_overrides/>
         <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
         <sys_policy/>
         <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
-        <sys_update_name>sys_ui_action_55acf811c39b5a1049d67d0ed40131a1</sys_update_name>
+        <sys_update_name>sys_ui_action_e27e5d29c313da1049d67d0ed40131d2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-24 12:45:16</sys_updated_on>
+        <sys_updated_on>2025-01-24 12:46:34</sys_updated_on>
         <table>x_1105246_refund_refund</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
     </sys_ui_action>
-    <sys_es_latest_script action="INSERT_OR_UPDATE">
-        <id>55acf811c39b5a1049d67d0ed40131a1</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-23 15:41:28</sys_created_on>
-        <sys_id>87ecfc9dc35b5a1049d67d0ed40131db</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 15:41:28</sys_updated_on>
-        <table>sys_ui_action</table>
-        <use_es_latest>true</use_es_latest>
-    </sys_es_latest_script>
 </record_update>
