@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.approval == 'approved'&amp;&amp; gs.hasRole('x_1105246_refund.hr_resolver') </condition>
+        <condition>current.approval == 'approved'&amp;&amp; gs.hasRole('x_1105246_refund.hr_resolver') &amp;&amp;current.state == 5</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -52,7 +52,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>55acf811c39b5a1049d67d0ed40131a1</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Complete</sys_name>
         <sys_overrides/>
         <sys_package display_value="Refund App - Ryan Kimura" source="x_1105246_refund">f2358994c3db161049d67d0ed4013108</sys_package>
@@ -60,7 +60,7 @@
         <sys_scope display_value="Refund App - Ryan Kimura">f2358994c3db161049d67d0ed4013108</sys_scope>
         <sys_update_name>sys_ui_action_55acf811c39b5a1049d67d0ed40131a1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-24 12:45:16</sys_updated_on>
+        <sys_updated_on>2025-01-24 14:26:03</sys_updated_on>
         <table>x_1105246_refund_refund</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
